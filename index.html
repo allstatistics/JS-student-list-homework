@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
+        defer></script>
+    <title>Students</title>
+</head>
+
+<body>
+    <div class="container shadow p-3 mb-5 bg-body-tertiary rounded parent-div">
+        <h1 align="center">Students</h1>
+        <div class="row">
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="Student Name" id="student-input" aria-label="Student Name">
+            </div>
+            <div class="col-1">
+                <button class="btn btn-primary" onclick="addStudent()">Add</button>
+            </div>
+            <div class="col-3">
+                <select class="form-select" aria-label="Option" id="selecting">
+                    <option selected>Select sorting types</option>
+                    <option value="1">A -> Z</option>
+                    <option value="2">Z -> A</option>
+                    <option value="3">Ascending (default)</option>
+                    <option value="4">Descending</option>
+                </select>
+            </div>
+            <div class="col-1">
+                <button class="btn btn-success" onclick="sorting()">Sort</button>
+            </div>
+        </div>
+        <br><br>
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputStudentName" class="col-form-label">Student Name</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" id="inputStudentName" class="form-control" aria-describedby="subText">
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-danger" onclick="deleteStudent()">Delete Student</button>
+            </div>
+            <div class="col-auto">
+              <span id="subText" class="form-text">
+                It does not matter whether the entered name is capitalized or not.
+              </span>
+            </div>
+          </div>
+    </div>
+    <div class="container shadow p-3 mb-5 bg-body-tertiary rounded parent-div2">
+        <h1 align="center">Students List </h1>
+        <br>
+        <h2 class="" id="first-message">Students name will appear here</h2>
+        <h3 class="none-displaying"></h3>
+        <div class="student-list"></div>
+    </div>
+</body>
+
+</html>

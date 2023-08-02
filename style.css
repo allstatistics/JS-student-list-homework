@@ -1,0 +1,15 @@
+.parent-div{
+    margin-top: 50px;
+}
+
+.none-displaying{
+    display: none;
+}
+.parent-div2{
+    margin-top: 70px;
+}
+.small-button{
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+}
