@@ -89,7 +89,6 @@ function sorting() {
         newStudentList[i]= students[i];
     }
     students.sort();
-    console.log(sortingOption);
     studentList[0].innerHTML = '';
     if (sortingOption === '1') {
         errorMessage.classList.add('none-displaying')
